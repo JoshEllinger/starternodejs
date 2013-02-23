@@ -1,5 +1,5 @@
 /**
- * File: .
+ * File: index.js
  * User: joshuaellinger
  * Date: 2/22/13
  */
@@ -12,4 +12,4 @@ handle["/"] = requestHandlers.start();
 handle["/start"] = requestHandlers.start();
 handle["/upload"] = requestHandlers.upload();
 
-server.start(router.route);
+server.start(router.route, handle);
